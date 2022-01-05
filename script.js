@@ -39,9 +39,10 @@
         let li = document.createElement('li');
         let b = document.createElement('button');
         b.textContent = c.name;
-        b.classList.add('cityBtn');
+        b.classList.add('cityB');
         li.appendChild(b);
         cities.appendChild(li);
+        li.style.listStyleType = "none";
       }
     }
     
@@ -147,7 +148,7 @@
        initHistory();
      })
     
-    // Backgrounds
+    // Backgrounds for later additions
     switch (main) {
       case "Snow":
         document.getElementById("wrapper-bg").style.backgroundImage =

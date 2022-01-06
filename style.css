@@ -1,30 +1,34 @@
-.body {
+body {
   color: #fff;
-  overflow-x: hidden;
-  height: 100%;
+  background-image: linear-gradient(#81d4fa, #2196f3);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.main {
-  display: inline-flex;
-  min-width: 100%;
-  justify-content: space-between;
-  margin: 20px;
+.content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-title {
 }
 
 #search-form input {
   width: 90%;
   height: 2em;
   border: 1px solid rgb(248, 247, 247);
-  border-radius: 5px;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 #search button {
   width: 90%;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 2em;
   box-sizing: border-box;
-  margin-top: 0.50em;
+  margin-top: 0.5em;
 }
 
 form button {
@@ -41,18 +45,19 @@ form button {
 
 .cityB {
   color: #fff;
-  background-color: lightgray;
-  width: 100%;
+  background-color: darkgray;
+  margin-right: 35px;
 }
 
 #display {
-  min-width: 75%;
-  margin-right: 40px;
+  min-width: 50%;
+  background-image: linear-gradient(#2196f3, #81d4fa);
+  border-radius: 25px;
 }
 
 #current-weather {
-  min-height: 100%;
-  min-width: 100%;
+  min-height: 80%;
+  min-width: 80%;
 }
 
 .uv {
@@ -60,7 +65,7 @@ form button {
   display: inline-block;
   text-align: center;
   min-width: 80px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .uv-favorable {
@@ -79,21 +84,15 @@ form button {
 }
 
 .forecast-card {
+  background-image: linear-gradient(rgb(255, 0, 180), rgb(255, 0, 130));
   color: white;
-  min-width: 20%;
+  min-width: 10%;
   box-sizing: border-box;
-  padding: 0.5em;
-}
-
-.large-font {
-  font-size: 70px;
-  font-family: Arial;
-}
-
-.card2 {
-  background-color: #607d8b;
-  padding: 0px 0px 40px 40px;
-  display: flex;
+  padding: 0.25em;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .fa-search {
@@ -119,11 +118,11 @@ form button {
   background-color: #b0bec5;
 }
 
-@media only screen and (min-width: 768px){
-    .card{
-      width: 100%;
-    }
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 100%;
   }
-  video {
-    opacity: 0.5;
-  }
+}
+video {
+  opacity: 0.5;
+}

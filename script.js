@@ -117,7 +117,7 @@ const showForecast = (lat, lon, cityName) => {
   forecast(lat, lon).then(blob => {
     let c = blob.current;
     displayCurrentWeather(cityName, moment().format(momentfmt), c.temp, c.wind_speed, c.humidity, c.uvi);
-    showDaily(blob.daily.slice(1,6));
+    showDaily(blob.daily.slice(1,7));
   });
 }
 

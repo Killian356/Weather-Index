@@ -14,14 +14,14 @@
 }
 
 #search-form input {
-  width: 100%;
+  width: 90%;
   height: 2em;
   border: 1px solid rgb(248, 247, 247);
   border-radius: 5px;
   box-sizing: border-box;
 }
 #search button {
-  width: 100%;
+  width: 90%;
   border: none;
   border-radius: 5px;
   height: 2em;

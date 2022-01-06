@@ -1,4 +1,4 @@
-# Weather Index & Weekly Forcaster
+# Weather Index & Weekly Forecaster
 
 ## Purpose
 To generate a user-friendly weekly forcast based on desired city location.
@@ -10,12 +10,14 @@ To generate a user-friendly weekly forcast based on desired city location.
 ## Built With
 * HTML
 * CSS
+* BootStrap
 * JavaScript
+* Local Storage Third-Party API: OpenWeather API
 
 ## Website
-https://killian356.github.io/Password-Generator/
+https://killian356.github.io/Weather-Index/
 
 ## Contribution
 Made with ❤️ by Killian Chamberlain
 
-### Your Favorite Password Generator
+### Your Favorite Weather App

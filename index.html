@@ -16,45 +16,49 @@
     <link rel="stylesheet" href="style.css" />
     <!--Links for clouFlare, bootstrap, CSS Stylesheett-->
   </head>
-
-  <body class="card text-white bg-image shadow-4-strong">
-    <div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
-      <div class="row d-flex justify-content-center">
-        <div class="row card0">
-          <div class="card1 col-lg-8 col-md-7">
-            <h1 id="title">Weather Index</h1>
-            <div class="text-center">
-              <main>
-              <section id='search'>
-                <form id='search-form'>
-                  <input type="text" id='search-text' placeholder="Search for a City">
-                  <button type="submit" id='search-button'>Search</button>
-                  <button type="button" id='clear-button'>Clean City History</button>
-                </form>
-                <div>
-                  <ul id='city-list'></ul>
-                </div>
-              </section>
-          
-              <section id='display'>
-                <div id='current-weather'>
-                  <h2 id='cw-header'></h2>
-                  <div id='cw-detail'></div>
-                </div>
-                <div id='forecast'>
-                  <h3>
-                    Weekly Forecast:
-                  </h3>
-                  <div id='forecast-list'></div>
-                </div>
-              </section>
-            </main>
+  <body>
+    <div class="card bg-dark text-white">
+      <video src="assets\Videos\Background Video.mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+      <div class="card bg-dark text-white">
+        <video src="assets\Videos\Background Video.mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+      </div>
+      <div class="card bg-dark text-white">
+        <video src="assets\Videos\Background Video.mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+        </div>
+        <div class="card bg-dark text-white">
+          <video src="assets\Videos\Background Video.mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
           </div>
-          </div>
-          <div class="card2 col-lg-4 col-md-5" id="wrapper-bg" class="card text-white bg-image shadow-4-strong"
-          style="background-image: url('img/clouds.gif')">
-            <div class="row px-3">
-          </div>
+      <div class="card-img-overlay">
+        <h3 class="card-title">Weather Index</h3>
+        <div class="text-center">
+          <main>
+            <section id="search">
+              <form id="search-form">
+                <input
+                  type="text"
+                  id="search-text"
+                  placeholder="Search for a City"
+                />
+                <button type="submit" id="search-button">Search</button>
+                <button type="button" id="clear-button">
+                  Clear City History
+                </button>
+              </form>
+              <div>
+                <ul id="city-list"></ul>
+              </div>
+            </section>
+            <section id="display">
+              <div id="current-weather">
+                <h2 id="cw-header"></h2>
+                <div id="cw-detail"></div>
+              </div>
+              <div id="forecast">
+                <h3>Weekly Forecast:</h3>
+                <div id="forecast-list"></div>
+              </div>
+            </section>
+          </main>
         </div>
       </div>
     </div>
@@ -62,5 +66,4 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>
-  <script src="effects.js"></script>
 </html>

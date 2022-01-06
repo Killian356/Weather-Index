@@ -1,3 +1,5 @@
+
+// Api Call
 const apiKey = "d1ed7be948d11ed8ac35d1aa806592ad";
 const apiUrl = 'https://api.openweathermap.org/data/2.5/';
 const onecall = 'onecall?';
@@ -11,6 +13,7 @@ const historyStorageKey = 'cities';
 
 let lastRes = null;
 
+// History pull and save
 const initHistory = () => {
   localStorage[historyStorageKey] = JSON.stringify([]);
   cities.innerHTML = '';
@@ -46,6 +49,8 @@ const updateHistory = () => {
 }
 
 updateHistory();
+
+//forcast card info
 
 const uviTier = (uv) =>
   `<span class='uv uv-${(uv<3)?'favorable':(uv<6)?'moderate':'severe'}'>${uv}</span>`
@@ -99,6 +104,7 @@ const weatherCall = function (cityName) {
     })
 }
 
+//Add forecast card 
 const showDaily = days => {
   forecasts.innerHTML = '';
   for (d of days) {
@@ -113,6 +119,7 @@ const showDaily = days => {
   }
 }
 
+// Daily Forecast 
 const showForecast = (lat, lon, cityName) => {
   forecast(lat, lon).then(blob => {
     let c = blob.current;
@@ -142,6 +149,7 @@ searchForm.querySelector('button').addEventListener('click', (ev) => {
     showForecast(json.coord.lat, json.coord.lon, json.name);
   });
  });
+// Clear search history
 
  document.querySelector('#clear-button').addEventListener('click', ev => {
    initHistory();

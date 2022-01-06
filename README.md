@@ -1,11 +1,11 @@
 # Weather Index & Weekly Forcaster
 
 ## Purpose
-To generate a weekly forcast of 
+To generate a user-friendly weekly forcast based on desired city location.
 
 ## Password Generator
-![Screenshot](assets/images/PW1.JPG "Password-Generator")
-![Screenshot](assets/images/PW2.JPG "Password-Generator")
+![Screenshot](assets/images/WI-1.JPG "Weather-Index")
+![Screenshot](assets/images/WI-2.JPG "Weather-Index")
 
 ## Built With
 * HTML
